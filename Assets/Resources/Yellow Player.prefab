@@ -12,14 +12,12 @@ GameObject:
   - component: {fileID: 7953905893691477664}
   - component: {fileID: 7953905893691477666}
   - component: {fileID: 7953905893691477667}
-  - component: {fileID: 3319919522128390428}
   - component: {fileID: 7953905893691477665}
   - component: {fileID: 7953905893691477671}
   - component: {fileID: 5780590173317860440}
   - component: {fileID: -1160153937726521114}
-  - component: {fileID: -5101365395410905033}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Yellow Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,8 +101,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000000021976447, y: 0.018435182}
-  m_Size: {x: 1.0514288, y: 0.79336643}
+  m_Offset: {x: -2.915499e-10, y: -0.002445698}
+  m_Size: {x: 1.0514289, y: 0.83512914}
   m_Direction: 1
 --- !u!50 &7953905893691477667
 Rigidbody2D:
@@ -127,25 +125,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &3319919522128390428
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7953905893691477668}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 962ff44a5d7739349881992b2c64963d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7953905893691477665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +172,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -1160153937726521114}
-  - {fileID: -5101365395410905033}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -212,7 +190,7 @@ MonoBehaviour:
   m_PositionModel:
     SynchronizeEnabled: 1
     TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
+    TeleportIfDistanceGreaterThan: 5
     InterpolateOption: 2
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 1
@@ -230,24 +208,3 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &-5101365395410905033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7953905893691477668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 1
-    Name: isMoving
-  m_SynchronizeLayers:
-  - SynchronizeType: 0
-    LayerIndex: 0

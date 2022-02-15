@@ -31,7 +31,7 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out Player player))
+        if (other.TryGetComponent(out PlayerController player))
         {
             player.coinCollectionScriptableObject.Add(this);
             gameObject.SetActive(false);

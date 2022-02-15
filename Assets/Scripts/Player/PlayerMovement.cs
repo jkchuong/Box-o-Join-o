@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool shouldMove = true;
 
-    private Animator animator;
+    // private Animator animator;
     private PlayerControls controls;
     private PlayerControls.MovementActions movement;
     private Rigidbody2D rb;
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
         
         controls = new PlayerControls();
         movement = controls.Movement;
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             moveInput = movement.Move.ReadValue<Vector2>();
             rb.velocity = moveInput * movementSpeed;
 
-            animator.SetBool(IsMoving, moveInput == Vector2.zero);
+            // animator.SetBool(IsMoving, moveInput == Vector2.zero);
         }
     }
 }
