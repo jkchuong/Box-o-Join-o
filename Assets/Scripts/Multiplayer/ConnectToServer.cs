@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     [SerializeField] private InputField usernameInput;
+    [SerializeField] private Button connectButton;
     [SerializeField] private TMP_Text buttonText;
     
     public void OnClickConnect()
@@ -19,6 +20,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
             PhotonNetwork.NickName = usernameInput.text;
 
             buttonText.text = "Connecting...";
+            connectButton.interactable = false;
             PhotonNetwork.AutomaticallySyncScene = true;
             PhotonNetwork.ConnectUsingSettings();
         }

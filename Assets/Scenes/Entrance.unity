@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usernameInput: {fileID: 445288416}
+  connectButton: {fileID: 942128305}
   buttonText: {fileID: 1091686399}
 --- !u!4 &415008331
 Transform:

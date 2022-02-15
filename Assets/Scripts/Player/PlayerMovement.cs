@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5f;
-
+    
     public bool shouldMove = true;
 
     // private Animator animator;
